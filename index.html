@@ -1,25 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>P(t)icici</title>
-  
+  <title>Pticici</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="pticici.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
 <body>
-  <div id="pagedisplay">
-    <div class="navigation-bar">
-      <div class="navigation-bar-links">
-        <ul>
-          <li><a  href="/login/" class="login">Login</a></li>
-          <li><a  href="/register/" class="register">Register</a></li>
+  <div class="container" id="header">
+
+    <nav class="navbar navbar-expand-sm navbar-fixed-top">
+      <div class="container-fluid"> 
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/header/">Pticici</a>
+        </div> 
+        <div class="form-outline col-md-8">
+          <form class="form-outline">
+            <div class="input-goup">
+              
+                
+                
+                <div class="input-group-append" id="button-addon4">
+                  <input type="search" id="searchform" class="search-circle input-field form-control"  placeholder="Search Photos, Products, Pros & More..."  aria-label="Search"/>
+                  <button class="btn btn-light" type="button"><i class="fa fa-search searchbtn"></i></button>
+                </div>
+              
+            </div>
+          </form>
+        </div>
+        
+        <ul id="nav-links" class="navbar-nav navbar-right">
+          <li class="nav-link"><a href="/login/" class="login">Login</a></li>
+          <li class="nav-link"><a href="/register/" class="register">Register</a></li>
         </ul>
-         </div>
-      </div>
-    </div>
+      </div> 
+             
+    </nav>
   </div>
-      
+ 
 
 
 </body>
