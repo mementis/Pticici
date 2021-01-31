@@ -10,3 +10,33 @@
 .searchbtn {
   margin-left: -70px;
 }
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.jumbotron {
+  height: 500px;
+}
+
+img {
+  min-width: 100%;
+  display: inline-block;
+  height: 500px;
+}
+
+
+
+.carousel {
+  position: relative;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
