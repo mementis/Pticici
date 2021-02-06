@@ -1,16 +1,52 @@
-#nav-links ul {
-  float: right;
+
+* {
+  box-sizing: border-box;
 }
 
+ul.navbar-nav {
+  display:inline;
+  list-style: none;
+  
+  
+}
+
+li.nav-link {
+  float:right;
+}
+
+/* header CSS */
+a.navbar-brand {
+  color: rgb(82, 3, 52);
+}
+
+/* search CSS*/
 .searchform input {
   background-image: url(/Images/search-icon-1.png);
-
 }
 
 .searchbtn {
   margin-left: -70px;
 }
 
+ul.nav-tabs {
+  display:flex;
+  object-position: center;
+  list-style: none;
+  vertical-align: middle;
+  
+}
+
+ul.navbar-nav > li.nav-link a {
+  display: block;
+  color: black;
+  padding: 8px;
+  
+  
+}
+
+
+
+/* dropdown CSS*/
 .dropdown:hover>.dropdown-menu {
   display: block;
 }
@@ -18,6 +54,18 @@
 .dropdown>.dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
     pointer-events: none;
+}
+a.nav-link {
+  color: rgb(20, 20, 20);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  
+}
+
+.dropdown-menu a {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
 }
 
 .jumbotron {
