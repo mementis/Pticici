@@ -7,5 +7,9 @@ $(document).ready(function(){
       })
 
     // jQuery methods go here...
+
+    /*function myFunction() {
+      document.getElementById("carouselslide").style.minHeight = "200px";
+    }*/
   
   });

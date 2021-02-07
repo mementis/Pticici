@@ -9,9 +9,6 @@ ul.navbar-nav {
    
 }
 
-li.nav-link {
-  float:right;
-}
 
 /* header CSS */
 a.navbar-brand {
@@ -42,6 +39,11 @@ ul.nav-tabs {
   
 }
 
+li.nav-link {
+  float:right;
+}
+
+
 ul.navbar-nav > li.nav-link a {
   display: block;
   color: black;
@@ -61,10 +63,26 @@ ul.navbar-nav > li.nav-link a {
 }
 
 a.dropdown-toggle {
-  color: rgb(20, 20, 20);
+  /*color: rgb(20, 20, 20);*/
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;  
+  }
+a.getideas {
+  color: rgb(20, 20, 20);
+}  
+a.findpro {
+  color:rgb(20, 20, 20)
 }
+a.shopbydept {
+  color:rgb(20, 20, 20)
+}
+a.sale {
+  color:teal;
+}
+
+a.dropdown-toggle i {
+  padding-inline: 5px;
+}  
 
 .dropdown-menu a {
   color: black;
@@ -73,9 +91,10 @@ a.dropdown-toggle {
 }
 
 img {
-  min-width: 100%;
+  width: 100%;
   display: inline-block;
-  height: 500px;
+  max-height: 75vh;
+  
 }
 
 .carousel {
