@@ -2,12 +2,11 @@
 * {
   box-sizing: border-box;
 }
-
+/*navigation bar*/
 ul.navbar-nav {
   display:inline;
   list-style: none;
-  
-  
+   
 }
 
 li.nav-link {
@@ -17,6 +16,8 @@ li.nav-link {
 /* header CSS */
 a.navbar-brand {
   color: rgb(82, 3, 52);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
 }
 
 /* search CSS*/
@@ -28,6 +29,11 @@ a.navbar-brand {
   margin-left: -70px;
 }
 
+button.shoppingcartbtn {
+  border-color: white;
+  border-style: none;
+  background-color: transparent;
+}
 ul.nav-tabs {
   display:flex;
   object-position: center;
@@ -39,9 +45,7 @@ ul.nav-tabs {
 ul.navbar-nav > li.nav-link a {
   display: block;
   color: black;
-  padding: 8px;
-  
-  
+  padding: 8px;  
 }
 
 
@@ -55,11 +59,11 @@ ul.navbar-nav > li.nav-link a {
   /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
-a.nav-link {
+
+a.dropdown-toggle {
   color: rgb(20, 20, 20);
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  
+  font-weight: bold;  
 }
 
 .dropdown-menu a {
@@ -68,17 +72,11 @@ a.nav-link {
   font-size: small;
 }
 
-.jumbotron {
-  height: 500px;
-}
-
 img {
   min-width: 100%;
   display: inline-block;
   height: 500px;
 }
-
-
 
 .carousel {
   position: relative;
