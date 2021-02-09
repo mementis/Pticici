@@ -117,7 +117,13 @@ div.container.container-fluid {
 	right: -12px;
 }
 
-.mylideshow > .carousel-item a {
+div.col-md-2.thumbs img {
+  border-style: outset;
   border-radius: 2px;
-  border-color: black;
+  border-color: white;
+}
+div.col-md-2.thumbs a:hover {
+  border-style: outset;
+  border-radius: 3px;
+  border-color: rgb(249, 249, 252);
 }
