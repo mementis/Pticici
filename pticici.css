@@ -110,3 +110,14 @@ a.dropdown-toggle i {
 div.container.container-fluid {
   padding-top:20px;
 }
+.carousel-control {
+	left: -12px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+
+.mylideshow > .carousel-item a {
+  border-radius: 2px;
+  border-color: black;
+}
