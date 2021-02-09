@@ -8,6 +8,11 @@ $(document).ready(function(){
 
     // jQuery methods go here...
 
+    console.log(" ok");
+    $('#myCarousel').carousel({
+        
+        
+      })
     /*function myFunction() {
       document.getElementById("carouselslide").style.minHeight = "200px";
     }*/

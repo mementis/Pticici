@@ -89,11 +89,15 @@ a.dropdown-toggle i {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: small;
 }
-
+div.container-fluid.bigslideshow {
+  padding-top: 0%;
+}
 .bigslider-inner img {
   width: 100%;
   display: inline-block;
   max-height: 65vh;
+  object-fit: cover;
+  object-position: center;
   
 }
 
@@ -108,10 +112,17 @@ a.dropdown-toggle i {
 
 /*thumbnail slideshow*/
 div.container.container-fluid {
-  padding-top:20px;
+  padding-top:30px;
+}
+h1.slideshow {
+  color:rgb(20, 20, 20);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  font-weight: bold;
 }
 .carousel-control {
 	left: -12px;
+  vertical-align: middle;
 }
 .carousel-control.right {
 	right: -12px;
@@ -126,4 +137,12 @@ div.col-md-2.thumbs a:hover {
   border-style: outset;
   border-radius: 3px;
   border-color: rgb(249, 249, 252);
+ 
+}
+div.col-md-2.thumbs a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(20, 20, 20);
+  font-size: small;
+  text-align: center;
+  font-weight:900;
 }
