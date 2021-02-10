@@ -53,6 +53,9 @@ ul.navbar-nav > li.nav-link a {
 
 
 /* dropdown CSS*/
+#nav-tabs {
+  position: relative;
+}
 .dropdown:hover>.dropdown-menu {
   display: block;
 }
@@ -120,22 +123,48 @@ h1.slideshow {
   font-size: large;
   font-weight: bold;
 }
-.carousel-control {
+
+
+#mySlideshow .carousel-control-prev {
 	left: -12px;
-  vertical-align: middle;
+  background: none;
+  color: #222;
+  font-size: 2.0em;
+  text-shadow: none;
+  
 }
-.carousel-control.right {
-	right: -12px;
+button.btn.btn-light.btn-md.left {
+  position: absolute;
+  left: 0px;
+  border-radius: 30px;
+  background-color: #fff;
+  border-style: outset;
+  margin-bottom:50%;
+}
+
+#mySlideshow .carousel-control-next {
+  right: -12px;
+  float:right;
+  color:#222;
+  font-size: 2.0em;
+}
+button.btn.btn-light.btn-md.right {
+  position: absolute;
+  right: 0px;
+  border-radius: 30px;
+  background-color: #fff;
+  border-style: outset; 
+  margin-bottom: 50%;
 }
 
 div.col-md-2.thumbs img {
   border-style: outset;
-  border-radius: 2px;
-  border-color: white;
+  border-radius: 5px;
+  border-color: #fff;
 }
 div.col-md-2.thumbs a:hover {
   border-style: outset;
-  border-radius: 3px;
+  border-radius: 5px;
   border-color: rgb(249, 249, 252);
  
 }
@@ -144,5 +173,16 @@ div.col-md-2.thumbs a {
   color: rgb(20, 20, 20);
   font-size: small;
   text-align: center;
+  margin-bottom: -10%;
   font-weight:900;
+  
 }
+#mySlideshow .carousel-caption{
+  position:relative;
+  top:0%;
+  left:0%;
+}
+#mySlideshow .carousel-caption > p {
+  color: #222;
+}
+
