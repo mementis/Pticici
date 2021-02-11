@@ -115,7 +115,7 @@ div.container-fluid.bigslideshow {
 
 /*thumbnail slideshow*/
 div.container.container-fluid {
-  padding-top:30px;
+  padding-top:20px;
 }
 h1.slideshow {
   color:rgb(20, 20, 20);
@@ -186,3 +186,25 @@ div.col-md-2.thumbs a {
   color: #222;
 }
 
+#mySlideshow1 .carousel-control-prev {
+	left: -12px;
+  background: none;
+  color: #222;
+  font-size: 2.0em;
+  text-shadow: none;
+  
+}
+#mySlideshow1 .carousel-control-next {
+  right: -12px;
+  float:right;
+  color:#222;
+  font-size: 2.0em;
+}
+#mySlideshow1 .carousel-caption{
+  position:relative;
+  top:0%;
+  left:0%;
+}
+#mySlideshow1 .carousel-caption > p {
+  color: #222;
+}
