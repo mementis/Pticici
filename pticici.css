@@ -31,6 +31,12 @@ button.shoppingcartbtn {
   border-style: none;
   background-color: transparent;
 }
+a.signin i {
+  padding: 3px;
+}
+a.joinasapro i {
+  padding:3px;
+}
 ul.nav-tabs {
   display:flex;
   object-position: center;
@@ -52,6 +58,7 @@ ul.navbar-nav > li.nav-link a {
 
 
 
+
 /* dropdown CSS*/
 #nav-tabs {
   position: relative;
@@ -69,6 +76,7 @@ a.dropdown-toggle {
   /*color: rgb(20, 20, 20);*/
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;  
+  word-spacing: 5px;
   }
 a.getideas {
   color: rgb(20, 20, 20);
@@ -85,6 +93,7 @@ a.sale {
 
 a.dropdown-toggle i {
   padding-left: 5px;
+  padding: 3px;
 }  
 
 .dropdown-menu a {
