@@ -37,24 +37,26 @@ a.signin i {
 a.joinasapro i {
   padding:3px;
 }
-ul.nav-tabs {
-  display:flex;
-  object-position: center;
-  list-style: none;
-  vertical-align: middle;
+#nav-links {
+  
+}
+#nav-links a {
+  color:#222;
+  padding-left: 3px;
+  padding-right:3px;
+  
+ 
   
 }
 
-li.nav-link {
-  float:right;
-}
 
 
+/*
 ul.navbar-nav > li.nav-link a {
   display: block;
   color: black;
   padding: 8px;  
-}
+}*/
 
 
 

@@ -15,26 +15,31 @@
 </head>
 <body>
   <div class="container" id="header">
-    <nav class="navbar navbar-expand-sm navbar-fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-fixed-top nav-fill">
       <div class="container-fluid"> 
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/header/"><i class="fab fa-earlybirds"></i>Pticici</a>
-        </div> 
-        <div class="form-outline col-md-7">
-          <form class="form-outline">
-            <div class="input-goup">
-                <div class="input-group-append" id="button-addon4">
-                  <input type="search" id="searchform" class="search-circle input-field form-control"  placeholder="Search Photos, Products, Pros & More..."  aria-label="Search"/>
-                  <button class="btn btn-light" type="button"><i class="fa fa-search searchbtn"></i></button>
-                </div>
+        <div class="row  mt-3 align-items-center w-100">
+          <div class="navbar-header col-sm-2">
+            <a class="navbar-brand" href="/header/"><i class="fab fa-earlybirds"></i>Pticici</a>
+         </div> 
+          <form class="navbar-form form-inline col-sm-7">
+            <div class="input-goup input-group-sm w-100">
+              <div class="input-group-append" id="button-addon">
+                <input type="search" id="searchform" class="search-circle input-field form-control w-100"  placeholder="Search Photos, Products, Pros & More..."  aria-label="Search"/>
+                <button class="btn btn-outline-light" type="button"><i class="fa fa-search searchbtn"></i></button>
+              </div>
             </div>
           </form>
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+          <div class="collapse navbar-collapse col-sm-3">
+            <ol id="nav-links" class="nav navbar-nav navbar-right mr-n5 ">
+              <li class="nav-link active"><a href="/shoppingcart/" class="shoppingcart"><i class="fa fa-shopping-cart"></i></a></li>
+              <li class="nav-link"><a href="/signin/" class="signin"><i class="fas fa-user"></i>Sign In</a></li>
+              <li class="nav-link"><a href="/joinasapro/" class="joinasapro"><i class="fas fa-toolbox"></i>Join as a Pro</a></li>
+            </ol>
+          </div>
         </div>
-        <ul id="nav-links" class="navbar-nav navbar-right">
-          <li class="nav-link"><a href="/shoppingcart/" class="shoppingcart"><button type="button" class="button shoppingcartbtn"><i class="fa fa-shopping-cart"></i></button></a></li>
-          <li class="nav-link"><a href="/signin/" class="signin"><i class="fas fa-user"></i>Sign In</a></li>
-          <li class="nav-link"><a href="/joinasapro/" class="joinasapro"><i class="fas fa-toolbox"></i>Join as a Pro</a></li>
-        </ul>
       </div>      
     </nav>
   </div>
