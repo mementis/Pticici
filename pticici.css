@@ -18,42 +18,22 @@ a.navbar-brand {
 }
 
 /* search CSS*/
-.searchform input {
-  background-image: url(/Images/search-icon-1.png);
-}
 
 .searchbtn {
   margin-left: -70px;
 }
 
-button.shoppingcartbtn {
-  border-color: white;
-  border-style: none;
-  background-color: transparent;
+#navbarCollapse li {
+  text-align: end;
 }
-a.signin i {
-  padding: 3px;
-}
-a.joinasapro i {
-  padding:3px;
-}
-#nav-links {
-  
-}
-#nav-links a {
-  color:#222;
-  padding-left: 3px;
-  padding-right:3px;
-  
- 
-  
+#navbarCollapse a {
+  color:#222; 
 }
 
 
 
 /*
 ul.navbar-nav > li.nav-link a {
-  display: block;
   color: black;
   padding: 8px;  
 }*/
