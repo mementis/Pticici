@@ -11,23 +11,35 @@ ul.navbar-nav {
 
 
 /* header CSS */
-a.navbar-brand {
-  color: rgb(82, 3, 52);
+div.navbar-header > a.navbar-brand {
+  color: rgb(10, 110, 69);
   font-family: Arial, Helvetica, sans-serif;
   font-size: x-large;
 }
 
+
+
 /* search CSS*/
 
-.searchbtn {
-  margin-left: -70px;
+#searchform {
+  background-color: #eee;
+  
 }
+#searchform:focus {
+  background-color: transparent;
+  
+ 
+}
+
 
 #navbarCollapse li {
   text-align: end;
 }
 #navbarCollapse a {
   color:#222; 
+}
+#navbarCollapse a:hover {
+  color:teal;
 }
 
 
@@ -54,6 +66,10 @@ ul.navbar-nav > li.nav-link a {
     pointer-events: none;
 }
 
+li.nav-item.dropdown:hover {
+  border-top-style: solid;
+  border-top-color: teal;
+}
 a.dropdown-toggle {
   /*color: rgb(20, 20, 20);*/
   font-family: Arial, Helvetica, sans-serif;

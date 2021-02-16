@@ -15,17 +15,17 @@
 </head>
 <body>
   <div class="container" id="header">
-    <nav class="navbar navbar-expand-md navbar-fixed-top nav-fill navbar-light">
+    <nav class="navbar navbar-expand-md navbar-fixed-top d-flex nav-fill navbar-light">
       <div class="container-fluid"> 
-        <div class="row flex-row d-flex mt-3 align-items-about w-100">
-          <div class="navbar-header ">
+        <div class="row flex-row d-flex  align-items-center justify-content-between w-100">
+          <div class="navbar-header navbar-left ">
             <a class="navbar-brand" href="/header/"><i class="fab fa-earlybirds"></i>Pticici</a>
          </div> 
-          <form class="navbar-form form-inline flex-grow-1 w-50">
-            <div class="input-goup input-group-sm w-100">
-              <div class="input-group-append" id="button-addon">
-                <input type="search" id="searchform" class="search-circle form-control w-100"  placeholder="Search Photos, Products, Pros & More..."  aria-label="Search"/>
-                <button class="btn btn-outline-light" type="button"><i class="fa fa-search searchbtn"></i></button>
+          <form class="navbar-form form-inline flex-sm-shrink-1 flex-md-grow-1 mt-4 w-50 ">
+            <div class="input-goup input-group-sm d-inline-flex mb-3 w-100">
+              <input type="text" id="searchform" class=" form-control border-0 w-100"  placeholder="Search Photos, Products, Pros & More..."  aria-label="Search"/>
+              <div class="input-group-append" id="button-addon"> 
+                <button class="btn btn-outline-light bg-transparent ml-n5 border-0 text-dark" type="button"><i class="fa fa-search searchbtn"></i></button>
               </div>
             </div>
           </form>
@@ -43,8 +43,8 @@
       </div>      
     </nav>
   </div>
-  <div class="container menu" id="menu">
-    <ul class="nav nav-tabs" id="nav-tabs">
+  <div class="container menu d-flex " id="menu">
+    <ul class="nav nav-tabs d-inline-flex w-100 flex-wrap flex-row flex-fill justify-content-center" id="nav-tabs">
       <li class="nav-item active dropdown getideas" id="getideastab">
         <a class="nav-link dropdown-toggle getideas" data-toggle="dropdown" href="/getideas/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-earlybirds"></i>GET IDEAS</a>
         <div class="dropdown-menu">
