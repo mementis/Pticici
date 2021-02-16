@@ -15,32 +15,38 @@
 </head>
 <body>
   <div class="container" id="header">
-    <nav class="navbar navbar-expand-sm navbar-fixed-top">
+    <nav class="navbar navbar-expand-md navbar-fixed-top d-flex nav-fill navbar-light">
       <div class="container-fluid"> 
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/header/">Pticici</a>
-        </div> 
-        <div class="form-outline col-md-8">
-          <form class="form-outline">
-            <div class="input-goup">
-                <div class="input-group-append" id="button-addon4">
-                  <input type="search" id="searchform" class="search-circle input-field form-control"  placeholder="Search Photos, Products, Pros & More..."  aria-label="Search"/>
-                  <button class="btn btn-light" type="button"><i class="fa fa-search searchbtn"></i></button>
-                </div>
+        <div class="row flex-row d-flex  align-items-center justify-content-between w-100">
+          <div class="navbar-header navbar-left ">
+            <a class="navbar-brand" href="/header/"><i class="fab fa-earlybirds"></i>Pticici</a>
+         </div> 
+          <form class="navbar-form form-inline flex-sm-shrink-1 flex-md-grow-1 mt-4 w-50 ">
+            <div class="input-goup input-group-sm d-inline-flex mb-3 w-100">
+              <input type="text" id="searchform" class=" form-control border-0 w-100"  placeholder="Search Photos, Products, Pros & More..."  aria-label="Search"/>
+              <div class="input-group-append" id="button-addon"> 
+                <button class="btn btn-outline-light bg-transparent ml-n5 border-0 text-dark" type="button"><i class="fa fa-search searchbtn"></i></button>
+              </div>
             </div>
           </form>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-right d-flex justify-content-end" id="navLinks">
+            <ul id="navbarCollapse" class="navbar-nav d-sm-flex flex-row-reverse flex-sm-fill ">
+              <li class="nav-item active"><a href="/shoppingcart/" class="nav-link shoppingcart"><i class="fa fa-shopping-cart"></i></a></li>
+              <li class="nav-item"><a href="/signin/" class="nav-link signin"><i class="fas fa-user"></i>Sign In</a></li>
+              <li class="nav-item"><a href="/joinasapro/" class="nav-link joinasapro"><i class="fas fa-toolbox"></i>Join as a Pro</a></li>
+            </ul>
+          </div>
         </div>
-        <ul id="nav-links" class="navbar-nav navbar-right">
-          <li class="nav-link"><a href="/login/" class="login">Login</a></li>
-          <li class="nav-link"><a href="/register/" class="register">Register</a></li>
-        </ul>
       </div>      
     </nav>
   </div>
-  <div class="container menu" id="menu">
-    <ul class="nav nav-tabs" id="nav-tabs">
-      <li class="nav-item dropdown getideas" id="getideastab">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/getideas/" role="button" aria-haspopup="true" aria-expanded="false">GET IDEAS</a>
+  <div class="container menu d-flex " id="menu">
+    <ul class="nav nav-tabs d-inline-flex w-100 flex-wrap flex-row flex-fill justify-content-center" id="nav-tabs">
+      <li class="nav-item active dropdown getideas" id="getideastab">
+        <a class="nav-link dropdown-toggle getideas" data-toggle="dropdown" href="/getideas/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-earlybirds"></i>GET IDEAS</a>
         <div class="dropdown-menu">
           <a class="dropdown-item kitchen" href="/kitchen/">Kitchen</a>
           <a class="dropdown-item livingroom" href="/livingroom/">Living Room</a>
@@ -49,30 +55,165 @@
           <a class="dropdown-item" href="#">Separated link</a>
         </div>
       <li class="nav-item dropdown professionals" id="findprofesionals">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/findprofessionals/" role="button" aria-haspopup="true" aria-expanded="false">FIND PROFESSIONALS</a>
+        <a class="nav-link dropdown-toggle findpro" data-toggle="dropdown" href="/findprofessionals/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>FIND PROFESSIONALS</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item kitchen" href="/kitchen/">Designers</a>
-          <a class="dropdown-item livingroom" href="/livingroom/">Decorators</a>
-          <a class="dropdown-item bedroom" href="/bedroom/">Suppliers</a>
+          <a class="dropdown-item designers" href="/designers/">Designers</a>
+          <a class="dropdown-item decorators" href="/decorators/">Decorators</a>
+          <a class="dropdown-item suppliers" href="/suppliers/">Suppliers</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown professionals" id="shopbydepartment">
+        <a class="nav-link dropdown-toggle shopbydept" data-toggle="dropdown" href="/shopbydepartment/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-chair"></i>SHOP BY DEPARTMENT</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item kitchen-dining" href="/kitchendining/">Kitchen & Dinning</a>
+          <a class="dropdown-item furniture" href="/furniture/">Furniture</a>
+          <a class="dropdown-item bath" href="/bath/">Bath</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown professionals" id="sale">
+        <a class="nav-link dropdown-toggle sale" data-toggle="dropdown" href="/sale/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift"></i>SALE</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item onsale" href="/onsale/">ON SALE - Up to 70%</a>
+          <a class="dropdown-item holidaysale" href="/holidaysale/">Valentine's Day Sale</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Separated link</a>
         </div>
       </li>
     </ul>
   </div>
-  <div class="container">
-    <div id="carouselslide" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
+  <div id ="bigSlideshow" class=" container-fluid bigslideshow">
+    <div id="carouselslide" class="carousel slide carousel-fade bigslider" data-ride="carousel" data-interval="50000">
+      <div class="carousel-inner bigslider-inner">
         <div class="carousel-item active">
-          <img src='https://st.hzcdn.com/simgs/pictures/living-rooms/harbor-view-three-salt-design-co-img~47b1dea00ee014fe_8-8146-1-69c0144.jpg' class="image-responsive d-block w-100" alt='pic1' />
+          <img src='https://steadfastinc.com/wp-content/uploads/2020/08/Sunroom-2020-2.jpg' class="img-responsive d-block w-100" alt='pic1' />
         </div>
         <div class="carousel-item">
-          <img src='https://st.hzcdn.com/simgs/cc9109440fea7b21_8-4616/contemporary-kitchen.jpg' class="image-responsive d-block w-100" alt='pic2'/>
+          <img src='https://images.ctfassets.net/hruy9nw8muoa/34fOYgkyMGrMnlEhilvgJ4/a9a5c1b35ff8b05b2df312cd854ba1ce/interior_design_2.jpg' class="img-responsive d-block w-100" alt='pic1' />
+        </div>
+        <div class="carousel-item">
+          <img src='https://www.expresssunrooms.com/wp-content/uploads/2020/10/galleryselector-decks-2.jpg' class="img-responsive d-block w-100" alt='pic2'/>
+        </div>
+        <div class="carousel-item">
+          <img src='https://i.pinimg.com/originals/fd/c5/9d/fdc59ddd762098d9ad78c1f7c558b6e9.jpg' class="img-responsive d-block w-100" alt='pic2'/>
+        </div>
+        <div class="carousel-item">
+          <img src='https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/02/18/11/hm.jpg?width=1500&auto=webp&quality=75' class="img--responsive d-block w-100" alt='pic2'/>
         </div>
       </div>
     </div> 
+  </div> 
+
+  <div class="container container-fluid slideshow-container">
+    <h1 class="slideshow">Shop By Department</h1>
+    <div class="row row-fluid">
+      <div id="mySlideshow" class="carousel slide myslideshow" data-ride="carousel" data-interval="5000">
+        <ul class="carousel-indicators">
+          <li data-target="#mySlideshow" data-slide-to="0" class="dept1 active"></li>
+          <li data-target="#mySlideshow" data-slide-to="1" class="dept2"></li>
+        </ul>
+        <div class="carousel-inner w-100">
+          <div class="carousel-item active thumbnails">
+            <div class="row">
+              <div class="col-md-2 thumbs"><a href="#mySlideshow" class="thumbnail"><img src="https://www.crushpixel.com/big-static12/preview4/spring-sale-message-with-roses-877344.jpg" alt="Sale" style="max-width:100%;"><div class="carousel-caption"><p>Sale</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow"><img src="https://i.pinimg.com/originals/be/97/4d/be974dc572a10a6123e27eaf145228e4.jpg" alt="Furniture" style="max-width:100%;"><div class="carousel-caption"><p>Furniture</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow"><img src="https://images.homelement.com/HD-4702DTR5PC-Din-Set.jpg" alt="Kitchen&Dining" style="max-width:100%;"><div class="carousel-caption"><p>Kitchen & Dining</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow"><img src="https://cdn.shopify.com/s/files/1/2111/1731/products/71j_2BuJS3avL._SL1500_17ab1ef5-0834-4fa4-a159-5cf6e365cfe9.jpg?v=1571543150" alt="Lihting" style="max-width:100%;"><div class="carousel-caption"><p>Lighting</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow"><img src="https://cdn.shopify.com/s/files/1/0026/0957/8073/products/e0e9f270-a00e-5736-bfd4-167d3490ed1d_1024x1024@2x.jpg?v=1566226370" alt="HomeDecor" style="max-width:100%;"><div class="carousel-caption"><p>Home Decor</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow"><img src="https://rhinolandfurniture.com/assets/admin/images/product/15854700555039_15.jpg" alt="Bedroom" style="max-width:100%;"><div class="carousel-caption"><p>Bedroom</p></div></a></div>
+              
+            </div><!--.row-->
+          </div><!--carousel item active-->           
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-2 thumbs"><a href="#mySlideshow"><img src="https://i.pinimg.com/originals/cb/2e/d9/cb2ed9df30a5f2fd86537becb6b9afa6.jpg" alt="Image" style="max-width:100%;"><div class="carousel-caption"><p>Bathroom</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow"><img src="https://www.outandout.com/image/cache/data/products/WD01/Parsons-Outdoor-Wooden-Picnic-Set-with-Cushions-Out-and-Out-Original-Furniture%20(2)-max-1500w.jpg" alt="Image" style="max-width:100%;"><div class="carousel-caption"><p>Outdoor</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow"><img src="https://hniesfp.imgix.net/8/images/detailed/119/frida-bookcase-78-front.jpg?fit=fill&bg=0FFF&w=1500&h=1000&auto=format,compress" alt="Image" style="max-width:100%;"><div class="carousel-caption"><p>Storage</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow"><img src="https://images-na.ssl-images-amazon.com/images/I/71HqFJRb2IL._SL1500_.jpg" alt="Babycrib" style="max-width:100%;"><div class="carousel-caption"><p>Baby & Kids</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow"><img src="https://m.media-amazon.com/images/I/712Ih2XiBKL._AC_SL1500_.jpg" alt="HomeImprovement" style="max-width:100%;"><div class="carousel-caption"><p>Home Improvement</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow"><img src="https://hniesfp.imgix.net/14/images/detailed/94/Jolipa_Basket_91362.jpg?fit=fill&bg=0FFF&w=1500&h=1000&auto=format,compress" alt="Housekeeping" style="max-width:100%;"><div class="carousel-caption"><p>Housekeeping & Laundry</p></div></a></div>
+            </div><!--row-->
+          </div><!--carousel item-->                  
+        </div><!--carousel inner-->
+
+        <a class="carousel-control-prev deptprev" href="#mySideshow" role="button" data-slide="prev">
+          <button class="btn btn-light btn-md left" type="button">
+          <i class="fa fa-chevron-left"></i></button>
+          <!--
+          <span class="carousel-control-prev-icon icon-dark" aria-hidden="true"></span>-->
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next deptnext" href="#mySlideshow" role="button" data-slide="next">
+          <button class="btn btn-light btn-md right" type="button">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+          <!--
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+          <span class="sr-only">Next</span>
+        </a>
+      </div><!--mySlideshow-->
+    </div>
+
     
   </div>
+
+  <div class="container container-fluid slideshow-container">
+    <h1 class="slideshow">Find Professionals</h1>
+    <div class="row row-fluid">
+      <div id="mySlideshow1" class="carousel slide myslideshow" data-ride="carousel" >
+        <ul class="carousel-indicators">
+          <li data-target="#mySlideshow1" data-slide-to="0" class="pros1 active"></li>
+          <li data-target="#mySlideshow1" data-slide-to="1" class="pros2"></li>
+        </ul>
+        <div class="carousel-inner w-100">
+          <div class="carousel-item active thumbnails">
+            <div class="row">
+              <div class="col-md-2 thumbs"><a href="#mySlideshow1" class="thumbnail"><img src="https://i.pinimg.com/originals/59/f4/9c/59f49cbd7d968bffa792cafd97c4e363.jpg" alt="BathroomRemodelling" style="max-width:100%;"><div class="carousel-caption"><p>Bathroom Remodelling</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow1"><img src="https://images.squarespace-cdn.com/content/v1/5ebaf6980f60d235382af8c2/1594927808548-W0UCLL6F4GY6L614NVB3/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/analisse-taft-house-exterior-1587586144.jpg?format=1500w" alt="HomeRemodelling" style="max-width:100%;"><div class="carousel-caption"><p>Home Remodelling</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow1"><img src="https://i.pinimg.com/originals/8c/d8/35/8cd835437a5c8c7b1c3509c1a9872c24.jpg" alt="KitchenRemodelling" style="max-width:100%;"><div class="carousel-caption"><p>Kitchen Remodelling</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow1"><img src="https://www.geniuslociarchitettura.it/wp-content/uploads/2018/06/01-7.jpg" alt="GeneralContracting" style="max-width:100%;"><div class="carousel-caption"><p>General Contracting</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow1"><img src="https://mhiresources.com/read/mhiimages/communityphotos/ha5/320155_grayson_lakes_001.jpg" alt="NewHome" style="max-width:100%;"><div class="carousel-caption"><p>New Home Construction</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow1"><img src="https://cdn.onekindesign.com/wp-content/uploads/2018/07/Gorgeous-Living-Rooms-With-Black-Walls-23-1-Kindesign.jpg" alt="InteriorDesign" style="max-width:100%;"><div class="carousel-caption"><p>Interior Design</p></div></a></div>
+              
+            </div><!--.row-->
+          </div><!--carousel item active-->           
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-2 thumbs"><a href="#mySlideshow1"><img src="https://mhiresources.com/read/mhiimages/communityphotos/ha5/320155_grayson_lakes_001.jpg" alt="NewHome" style="max-width:100%;"><div class="carousel-caption"><p>New Home Construction</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow1"><img src="https://cdn.onekindesign.com/wp-content/uploads/2018/07/Gorgeous-Living-Rooms-With-Black-Walls-23-1-Kindesign.jpg" alt="InteriorDesign" style="max-width:100%;"><div class="carousel-caption"><p>Interior Design</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow1"><img src="https://1.bp.blogspot.com/-r4JNqsqsXwM/XZWUAUDBvkI/AAAAAAAAVtg/vpnkFrfgTgkHMzv4bPBDzxSk9uFlST-_ACLcBGAsYHQ/s1600/Canonbury+-+Brick+Facade+Prefab+Home+Addition%252C+London%252C+UK+1.jpg" alt="HomeAdditions" style="max-width:100%;"><div class="carousel-caption"><p>Home Additions</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow1"><img src="http://landezine-award.com/wp-content/uploads/2020/03/RichardBloom_705.jpg" alt="Landscape" style="max-width:100%;"><div class="carousel-caption"><p>Landscape Design</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow1"><img src="https://i.pinimg.com/originals/59/9f/c1/599fc1a568bd8d77ac52bc32bdde752c.jpg" alt="Deck" style="max-width:100%;"><div class="carousel-caption"><p>Deck Building</p></div></a></div>
+              <div class="col-md-2 thumbs"><a href="#mySlideshow1"><img src="https://selfbuild.ie/wp-content/uploads/2020/04/Stairs4-1.jpg" alt="Flooring" style="max-width:100%;"><div class="carousel-caption"><p>Flooring Instalation</p></div></a></div>
+            </div><!--row-->
+          </div><!--carousel item-->                  
+        </div><!--carousel inner-->
+
+        <a class="carousel-control-prev prosprev" href="#mySideshow1" role="button" data-slide="prev">
+          <button class="btn btn-light btn-md left" type="button">
+          <i class="fa fa-chevron-left"></i></button>
+          <!--
+          <span class="carousel-control-prev-icon icon-dark" aria-hidden="true"></span>-->
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next prosnext" href="#mySlideshow1" role="button" data-slide="next">
+          <button class="btn btn-light btn-md right" type="button">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+          <!--
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+          <span class="sr-only">Next</span>
+        </a>
+      </div><!--mySlideshow-->
+    </div>
+
+    
+  </div>
+
+  
 
 
 </body>
