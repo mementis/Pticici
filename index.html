@@ -20,8 +20,11 @@
         <div class="row flex-row d-flex  align-items-center justify-content-between w-100">
           <div class="navbar-header navbar-left ">
             <a class="navbar-brand" href="/header/"><i class="fab fa-earlybirds"></i>Pticici</a>
-         </div> 
-          <form class="navbar-form form-inline flex-sm-shrink-1 flex-md-grow-1 mt-3 w-50 ">
+          </div>
+          <button id="searchformBtn" class="btn btn-outline-light text-dark d-md-none"   data-toggle="collapse" data-target="#search"  aria-control="search" aria-expanded="false">
+            <i class="fa fa-search searchbtn"></i>
+          </button>
+          <form id="search" class="navbar-form collapse form-inline flex-sm-shrink-1 flex-md-grow-1 mt-3 w-50 d-sm-none d-md-block">
             <div class="input-goup input-group-sm d-inline-flex mb-3 w-100">
               <input type="text" id="searchform" class=" form-control border-0 w-100"  placeholder="Search Photos, Products, Pros & More..."  aria-label="Search"/>
               <div class="input-group-append" id="button-addon"> 
