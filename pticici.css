@@ -99,6 +99,13 @@ a.dropdown-toggle i {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: small;
 }
+@media (min-width: 768px) {
+  .dropdown-toggle {
+    justify-content: flex-end;
+    
+  }
+}
+
 div.container-fluid.bigslideshow {
   padding-top: 0%;
 }
