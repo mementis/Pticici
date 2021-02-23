@@ -8,3 +8,17 @@ a.navbar-brand i {
 a.navbar-brand span {
     color:teal
 }
+
+
+img.icon-google {
+    display: inline-flex;
+    object-fit: contain;
+    object-position: center;
+}
+.btn-social button {
+    font-size: large;
+}
+
+td {
+    vertical-align: middle;
+}
