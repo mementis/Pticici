@@ -9,6 +9,9 @@ a.navbar-brand span {
     color:teal
 }
 
+table {
+    margin: auto;
+}
 
 img.icon-google {
     display: inline-flex;
@@ -20,5 +23,6 @@ img.icon-google {
 }
 
 td {
-    vertical-align: middle;
+    
 }
+
