@@ -17,7 +17,7 @@
   <div class="container" id="header">
     <nav class="navbar navbar-expand-md navbar-fixed-top d-flex nav-fill navbar-light">
       <div class="container-fluid"> 
-        <div class="row flex-row d-flex  align-items-center justify-content-between w-100">
+        <div class="row flex-row d-flex  align-items-center justify-content-around  flex-fill w-100">
           <div class="navbar-header navbar-left ">
             <a class="navbar-brand" href="/header/"><i class="fab fa-earlybirds"></i>Pticici</a>
           </div>
@@ -32,61 +32,59 @@
               </div>
             </div>
           </form>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse navbar-right d-flex justify-content-end" id="navLinks">
-            <ul id="navbarCollapse" class="navbar-nav d-sm-flex flex-row-reverse flex-sm-fill ">
-              <li class="nav-item active"><a href="/shoppingcart/" class="nav-link shoppingcart"><i class="fa fa-shopping-cart"></i></a></li>
-              <li class="nav-item"><a href="/signin/" class="nav-link signin"><i class="fas fa-user"></i>Sign In</a></li>
-              <li class="nav-item"><a href="/joinasapro/" class="nav-link joinasapro"><i class="fas fa-toolbox"></i>Join as a Pro</a></li>
-            </ul>
-          </div>
+          <ul id="navbarCollapse" class="navbar-nav d-inline-flex flex-row-reverse flex-sm-fill ">
+            <li class="nav-item active mx-2"><a href="/shoppingcart/" class="nav-link shoppingcart"><i class="fa fa-shopping-cart p-2"></i></a></li>
+            <li class="nav-item mx-2"><a href="login.html/" class="nav-link signin"><i class="fas fa-user p-2"></i><span class="d-none d-md-inline">Sign In</span></a></li>
+            <li class="nav-item mx-2"><a href="/joinasapro/" class="nav-link joinasapro"><i class="fas fa-toolbox p-2"></i><span class="d-none d-md-inline">Join as a Pro</span></a></li>
+          </ul> 
         </div>
       </div>      
     </nav>
   </div>
   <div class="container menu d-flex " id="menu">
-    <ul class="nav nav-tabs d-inline-flex w-100 flex-wrap flex-row flex-fill justify-content-center" id="nav-tabs">
-      <li class="nav-item active dropdown getideas" id="getideastab">
-        <a class="nav-link dropdown-toggle getideas" data-toggle="dropdown" href="/getideas/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-earlybirds"></i>GET IDEAS</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item kitchen" href="/kitchen/">Kitchen</a>
-          <a class="dropdown-item livingroom" href="/livingroom/">Living Room</a>
-          <a class="dropdown-item bedroom" href="/bedroom/">Bedroom</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-        </div>
-      <li class="nav-item dropdown professionals" id="findprofesionals">
-        <a class="nav-link dropdown-toggle findpro" data-toggle="dropdown" href="/findprofessionals/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>FIND PROFESSIONALS</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item designers" href="/designers/">Designers</a>
-          <a class="dropdown-item decorators" href="/decorators/">Decorators</a>
-          <a class="dropdown-item suppliers" href="/suppliers/">Suppliers</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown professionals" id="shopbydepartment">
-        <a class="nav-link dropdown-toggle shopbydept" data-toggle="dropdown" href="/shopbydepartment/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-chair"></i>SHOP BY DEPARTMENT</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item kitchen-dining" href="/kitchendining/">Kitchen & Dinning</a>
-          <a class="dropdown-item furniture" href="/furniture/">Furniture</a>
-          <a class="dropdown-item bath" href="/bath/">Bath</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown professionals" id="sale">
-        <a class="nav-link dropdown-toggle sale" data-toggle="dropdown" href="/sale/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift"></i>SALE</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item onsale" href="/onsale/">ON SALE - Up to 70%</a>
-          <a class="dropdown-item holidaysale" href="/holidaysale/">Valentine's Day Sale</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-        </div>
-      </li>
-    </ul>
+    <button class="btn btn-outline-light text-dark d-md-none" data-toggle="collapse" data-target="#nav-tabs" aria-control="nav-tabs" aria-expanded="false" ><i class="fas fa-bars"></i></button>
+    <div class="collapse navbar-collapse d-flex justify-content-start">
+      <ul class="nav nav-tabs d-sm-flex d-md-inline-flex w-100 flex-wrap flex-md-row flex-column flex-fill justify-content-md-center" id="nav-tabs">
+        <li class="nav-item active dropdown getideas" id="getideastab">
+          <a class="nav-link dropdown-toggle getideas" data-toggle="dropdown" href="/getideas/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-earlybirds"></i>GET IDEAS</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item kitchen" href="/kitchen/">Kitchen</a>
+            <a class="dropdown-item livingroom" href="/livingroom/">Living Room</a>
+            <a class="dropdown-item bedroom" href="/bedroom/">Bedroom</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        <li class="nav-item dropdown professionals" id="findprofesionals">
+          <a class="nav-link dropdown-toggle findpro" data-toggle="dropdown" href="/findprofessionals/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>FIND PROFESSIONALS</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item designers" href="/designers/">Designers</a>
+            <a class="dropdown-item decorators" href="/decorators/">Decorators</a>
+            <a class="dropdown-item suppliers" href="/suppliers/">Suppliers</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown professionals" id="shopbydepartment">
+          <a class="nav-link dropdown-toggle shopbydept" data-toggle="dropdown" href="/shopbydepartment/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-chair"></i>SHOP BY DEPARTMENT</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item kitchen-dining" href="/kitchendining/">Kitchen & Dinning</a>
+            <a class="dropdown-item furniture" href="/furniture/">Furniture</a>
+            <a class="dropdown-item bath" href="/bath/">Bath</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown professionals" id="sale">
+          <a class="nav-link dropdown-toggle sale" data-toggle="dropdown" href="/sale/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift"></i>SALE</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item onsale" href="/onsale/">ON SALE - Up to 70%</a>
+            <a class="dropdown-item holidaysale" href="/holidaysale/">Valentine's Day Sale</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
   <div id ="bigSlideshow" class=" container-fluid bigslideshow d-none d-md-block">
     <div id="carouselslide" class="carousel slide carousel-fade bigslider" data-ride="carousel" data-interval="50000">

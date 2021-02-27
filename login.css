@@ -1,0 +1,28 @@
+a.navbar-brand {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+a.navbar-brand i {
+    color: rgb(119, 23, 76);
+}
+a.navbar-brand span {
+    color:teal
+}
+
+table {
+    margin: auto;
+}
+
+img.icon-google {
+    display: inline-flex;
+    object-fit: contain;
+    object-position: center;
+}
+.btn-social button {
+    font-size: large;
+}
+
+td {
+    
+}
+
