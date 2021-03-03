@@ -91,9 +91,9 @@
           <p>Photos</p>
           <h2>Photos</h2>
     </div>
-    <div id="filter-menu" class="container-fluid d-flex justify-content-center">
-        <div class="wrapper">
-            <div class="row">
+    <div id="filter-menu" class="container d-flex filter-menu">
+        <div class="wrapper w-100">
+            <div class="row flex-row ">
                 <ul class="nav justify-content-start bg-white">
                     <li class="nav-item active"><a class="nav-link btn btn-default border text-dark ml-2 font-weight-normal" href="#" data-toggle="modal" data-target="#filterModal"><i class="fas fa-exchange-alt px-2"></i>All Filters</a>
                         <div id="filterModal" class="modal fade" role="dialog">
@@ -148,23 +148,44 @@
 
                 </ul>
             </div><!--row--> 
+            <div class="row flex-row">
+                <nav id="refine" class="navbar d-inline-flex  flex-fill justify-content-between w-100 bg-white">
+                    <div class="left-nav">
+                        <span class="navbar-text">Refine by:</span>
+                        <div class="dropdown d-inline-flex ">
+                            <a class="nav-link text-secondary" href="#">Budget</a>
+                            <a class="nav-link text-secondary" href="#">Location</a>
+                        </div>
+                    </div>
+                    <div class="right-nav">
+                        <span class="navbar-text">Sort By</span>
+                        <div class="dropdown d-inline-flex ">
+                            <a class="nav-link text-secondary" href="#">Popular Today</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
         </div>
     </div>
-    <nav id="refine" class="navbar justify-content-between">
-        <div class="left-nav">
-            <span class="navbar-text">Refine by:</span>
-            <div class="dropdown d-inline-flex ">
-                <a class="nav-link" href="#">Budget</a>
-                <a class="nav-link" href="#">Locaton</a>
+    <div class="container refiner ">
+        <nav id="refine" class="navbar justify-content-between bg-white">
+            <div class="left-nav">
+                <span class="navbar-text">Refine by:</span>
+                <div class="dropdown d-inline-flex ">
+                    <a class="nav-link" href="#">Budget</a>
+                    <a class="nav-link" href="#">Locaton</a>
+                </div>
             </div>
-        </div>
-        <div class="right-nav">
-            <span class="navbar-text">Sort By</span>
-            <div class="dropdown d-inline-flex ">
-                <a class="nav-link" href="#">Popular Today</a>
+            <div class="right-nav">
+                <span class="navbar-text">Sort By:</span>
+                <div class="dropdown d-inline-flex ">
+                    <a class="nav-link" href="#">Popular Today</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
+    
 
 
 
