@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pticici</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="photos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+    <div class="container" id="header">
+        <nav class="navbar navbar-expand-md navbar-fixed-top d-flex nav-fill navbar-light">
+          <div class="container-fluid"> 
+            <div class="row flex-row d-flex  align-items-center justify-content-around  flex-fill w-100">
+              <div class="navbar-header navbar-left ">
+                <a class="navbar-brand" href="/header/"><i class="fab fa-earlybirds"></i>Pticici</a>
+              </div>
+              <button id="searchformBtn" class="btn btn-outline-light text-dark d-md-none"   data-toggle="collapse" data-target="#search"  aria-control="search" aria-expanded="false">
+                <i class="fa fa-search searchbtn"></i>
+              </button>
+              <form id="search" class="navbar-form collapse form-inline flex-sm-shrink-1 flex-md-grow-1 mt-3 w-50 d-sm-none d-md-block">
+                <div class="input-goup input-group-sm d-inline-flex mb-3 w-100">
+                  <input type="text" id="searchform" class=" form-control border-0 w-100"  placeholder="Search Photos, Products, Pros & More..."  aria-label="Search"/>
+                  <div class="input-group-append" id="button-addon"> 
+                    <button class="btn btn-outline-light bg-transparent ml-n5 border-0 text-dark" type="button"><i class="fa fa-search searchbtn"></i></button>
+                  </div>
+                </div>
+              </form>
+              <ul id="navbarCollapse" class="navbar-nav d-inline-flex flex-row-reverse flex-sm-fill ">
+                <li class="nav-item active mx-2"><a href="/shoppingcart/" class="nav-link shoppingcart"><i class="fa fa-shopping-cart p-2"></i></a></li>
+                <li class="nav-item mx-2"><a href="login.html/" class="nav-link signin"><i class="fas fa-user p-2"></i><span class="d-none d-md-inline">Sign In</span></a></li>
+                <li class="nav-item mx-2"><a href="/joinasapro/" class="nav-link joinasapro"><i class="fas fa-toolbox p-2"></i><span class="d-none d-md-inline">Join as a Pro</span></a></li>
+              </ul> 
+            </div>
+          </div>      
+        </nav>
+    </div>
+    <div class="container menu d-flex " id="menu">
+        <button class="btn btn-outline-light text-dark d-md-none" data-toggle="collapse" data-target="#nav-tabs" aria-control="nav-tabs" aria-expanded="false" ><i class="fas fa-bars"></i></button>
+        <div class="collapse navbar-collapse d-flex justify-content-start">
+          <ul class="nav nav-tabs d-sm-flex d-md-inline-flex w-100 flex-wrap flex-md-row flex-column flex-fill justify-content-md-center" id="nav-tabs">
+            <li class="nav-item active dropdown getideas position-static" id="getideastab">
+              <a class="nav-link dropdown-toggle getideas" data-toggle="dropdown" href="/getideas/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-earlybirds"></i>GET IDEAS</a>
+              <div class="dropdown-menu w-100 justify-content-around">
+                <a class="dropdown-item kitchen" href="/kitchen/">Kitchen</a>
+                <a class="dropdown-item livingroom" href="/livingroom/">Living Room</a>
+                <a class="dropdown-item bedroom" href="/bedroom/">Bedroom</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            <li class="nav-item dropdown professionals" id="findprofesionals">
+              <a class="nav-link dropdown-toggle findpro" data-toggle="dropdown" href="/findprofessionals/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>FIND PROFESSIONALS</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item designers" href="/designers/">Designers</a>
+                <a class="dropdown-item decorators" href="/decorators/">Decorators</a>
+                <a class="dropdown-item suppliers" href="/suppliers/">Suppliers</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown professionals" id="shopbydepartment">
+              <a class="nav-link dropdown-toggle shopbydept" data-toggle="dropdown" href="/shopbydepartment/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-chair"></i>SHOP BY DEPARTMENT</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item kitchen-dining" href="/kitchendining/">Kitchen & Dinning</a>
+                <a class="dropdown-item furniture" href="/furniture/">Furniture</a>
+                <a class="dropdown-item bath" href="/bath/">Bath</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown professionals" id="sale">
+              <a class="nav-link dropdown-toggle sale" data-toggle="dropdown" href="/sale/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift"></i>SALE</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item onsale" href="/onsale/">ON SALE - Up to 70%</a>
+                <a class="dropdown-item holidaysale" href="/holidaysale/">Valentine's Day Sale</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div class="container container-fluid mt-3">
+          <p>Photos</p>
+          <h2>Photos</h2>
+    </div>
+    <div id="filter-menu" class="container-fluid d-flex justify-content-center">
+        <div class="wrapper">
+            <div class="row">
+                <ul class="nav justify-content-start bg-white">
+                    <li class="nav-item active"><a class="nav-link btn btn-default border text-dark ml-2 font-weight-normal" href="#" data-toggle="modal" data-target="#filterModal"><i class="fas fa-exchange-alt px-2"></i>All Filters</a>
+                        <div id="filterModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Modal Header</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="btn-group btn-group-vertical ">
+                                            <div class="btn-group dropright">
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Color
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <!-- Dropdown menu links -->
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark ml-2 font-weight-normal" href="#">Style</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    </li>
+                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark ml-2 font-weight-normal" href="#">Color</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    </li>
+                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark ml-2 font-weight-normal" href="#">Size</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    </li>
+                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark ml-2 font-weight-normal" href="#">Option 1</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    </li>
+                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark ml-2 font-weight-normal" href="#">Option 2</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    </li>
+                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark ml-2 font-weight-normal" href="#">Option 3</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    </li>
+                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark mx-2 font-weight-normal" href="#">Option 4</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    </li>
+
+                </ul>
+            </div><!--row--> 
+        </div>
+    </div>
+    <nav id="refine" class="navbar justify-content-between">
+        <div class="left-nav">
+            <span class="navbar-text">Refine by:</span>
+            <div class="dropdown d-inline-flex ">
+                <a class="nav-link" href="#">Budget</a>
+                <a class="nav-link" href="#">Locaton</a>
+            </div>
+        </div>
+        <div class="right-nav">
+            <span class="navbar-text">Sort By</span>
+            <div class="dropdown d-inline-flex ">
+                <a class="nav-link" href="#">Popular Today</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <script src="photos.js"></script>
+</body>
