@@ -11,7 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="pticici.js"></script>
+  
 </head>
 <body>
   <div class="container" id="header">
@@ -45,9 +45,9 @@
     <button class="btn btn-outline-light text-dark d-md-none" data-toggle="collapse" data-target="#nav-tabs" aria-control="nav-tabs" aria-expanded="false" ><i class="fas fa-bars"></i></button>
     <div class="collapse navbar-collapse d-flex justify-content-start">
       <ul class="nav nav-tabs d-sm-flex d-md-inline-flex w-100 flex-wrap flex-md-row flex-column flex-fill justify-content-md-center" id="nav-tabs">
-        <li class="nav-item active dropdown getideas" id="getideastab">
+        <li class="nav-item active dropdown getideas position-static" id="getideastab">
           <a class="nav-link dropdown-toggle getideas" data-toggle="dropdown" href="/getideas/" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-earlybirds"></i>GET IDEAS</a>
-          <div class="dropdown-menu">
+          <div class="dropdown-menu w-100 justify-content-around">
             <a class="dropdown-item kitchen" href="/kitchen/">Kitchen</a>
             <a class="dropdown-item livingroom" href="/livingroom/">Living Room</a>
             <a class="dropdown-item bedroom" href="/bedroom/">Bedroom</a>
@@ -216,6 +216,6 @@
 
   
 
-
+  <script src="pticici.js"></script>
 </body>
 </html>

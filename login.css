@@ -9,8 +9,16 @@ a.navbar-brand span {
     color:teal
 }
 
+div.header {
+    margin: auto;
+}
+
 table {
     margin: auto;
+}
+input.login-button {
+    background-color: teal;
+    border-color: teal;
 }
 
 img.icon-google {
@@ -22,7 +30,12 @@ img.icon-google {
     font-size: large;
 }
 
-td {
+a.forgotpass {
+    color: teal;
     
+}
+
+a.join-now {
+    color:teal;
 }
 
