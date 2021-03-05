@@ -85,65 +85,79 @@
               </div>
             </li>
           </ul>
-        </div>
-    </div>
+        </div><!--navbar-collapse-->
+    </div><!--container menu-->
     <div class="container container-fluid mt-3">
           <p>Photos</p>
           <h2>Photos</h2>
     </div>
     <div id="filter-menu" class="container d-flex filter-menu">
         <div class="wrapper w-100">
-            <div class="row flex-row ">
-                <ul class="nav justify-content-start bg-white">
-                    <li class="nav-item active"><a class="nav-link btn btn-default border text-dark ml-2 font-weight-normal" href="#" data-toggle="modal" data-target="#filterModal"><i class="fas fa-exchange-alt px-2"></i>All Filters</a>
-                        <div id="filterModal" class="modal fade" role="dialog">
-                            <div class="modal-dialog">
-                                <!-- Modal content-->
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Modal Header</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="btn-group btn-group-vertical ">
-                                            <div class="btn-group dropright">
-                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Color
-                                                </button>
-                                                <div class="dropdown-menu">
-                                                    <!-- Dropdown menu links -->
-                                                
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="row flex-row filters">
+                <ul id="filters" class="nav justify-content-start bg-white">
+                    <li class="nav-item active all-filters" id="allFilters">
+                      <a class="nav-link all-filters btn btn-default border ml-2 font-weight-normal" href="#" data-toggle="modal" data-target="#filterModal" role="button"><i class="fas fa-exchange-alt px-2"></i>All Filters</a>
+                      <div id="filterModal" class="modal fade" role="dialog">
+                          <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title">Modal Header</h4>
+                                  </div><!--modal-header-->
+                                  <div class="modal-body">
+                                      <div class="btn-group btn-group-vertical ">
+                                          <div class="btn-group dropright">
+                                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Color
+                                              </button>
+                                              <div class="dropdown-menu">
+                                                  <!-- Dropdown menu links -->
+                                              </div><!--dropdown-menu-->
+                                          </div><!--btn-grp dropright-->
+                                      </div><!--btn-grp-vertical-->
+                                  </div><!--modal-body-->
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div><!--modal-footer-->
+                              </div><!--modal-content-->
+                          </div><!--modal-dialog-->
+                      </div><!--filterModal ID-->
                     </li>
-                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark ml-2 font-weight-normal" href="#">Style</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    <li class="nav=item dropdown">
+                      <a class="nav-link dropdown-toggle btn btn-default border ml-2 font-weight-normal" href="#">Style</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Item 1</a></div>
                     </li>
-                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark ml-2 font-weight-normal" href="#">Color</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    <li class="nav=item dropdown">
+                      <a class="nav-link dropdown-toggle btn btn-default border ml-2 font-weight-normal" href="#">Color</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Item 1</a></div>
                     </li>
-                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark ml-2 font-weight-normal" href="#">Size</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    <li class="nav=item dropdown">
+                      <a class="nav-link dropdown-toggle btn btn-default border ml-2 font-weight-normal" href="#">Size</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Item 1</a></div>
                     </li>
-                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark ml-2 font-weight-normal" href="#">Option 1</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    <li class="nav=item dropdown">
+                      <a class="nav-link dropdown-toggle btn btn-default border ml-2 font-weight-normal" href="#">Option 1</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Item 1</a></div>
                     </li>
-                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark ml-2 font-weight-normal" href="#">Option 2</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    <li class="nav=item dropdown">
+                      <a class="nav-link dropdown-toggle btn btn-default border ml-2 font-weight-normal" href="#">Option 2</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Item 1</a></div>
                     </li>
-                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark ml-2 font-weight-normal" href="#">Option 3</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    <li class="nav=item dropdown">
+                      <a class="nav-link dropdown-toggle btn btn-default border ml-2 font-weight-normal" href="#">Option 3</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Item 1</a></div>
                     </li>
-                    <li class="nav=item dropdown"><a class="nav-link dropdown-toggle btn btn-default border text-dark mx-2 font-weight-normal" href="#">Option 4</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Item 1</a></div>
+                    <li class="nav=item dropdown">
+                      <a class="nav-link dropdown-toggle btn btn-default border mx-2 font-weight-normal" href="#">Option 4</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Item 1</a></div>
                     </li>
 
                 </ul>
@@ -156,35 +170,57 @@
                             <a class="nav-link text-secondary" href="#">Budget</a>
                             <a class="nav-link text-secondary" href="#">Location</a>
                         </div>
-                    </div>
+                    </div><!--left-nav-->
                     <div class="right-nav">
                         <span class="navbar-text">Sort By</span>
                         <div class="dropdown d-inline-flex ">
                             <a class="nav-link text-secondary" href="#">Popular Today</a>
                         </div>
-                    </div>
-                </nav>
-            </div>
-            
-        </div>
-    </div>
-    <div class="container refiner ">
-        <nav id="refine" class="navbar justify-content-between bg-white">
-            <div class="left-nav">
-                <span class="navbar-text">Refine by:</span>
-                <div class="dropdown d-inline-flex ">
-                    <a class="nav-link" href="#">Budget</a>
-                    <a class="nav-link" href="#">Locaton</a>
-                </div>
-            </div>
-            <div class="right-nav">
-                <span class="navbar-text">Sort By:</span>
-                <div class="dropdown d-inline-flex ">
-                    <a class="nav-link" href="#">Popular Today</a>
-                </div>
-            </div>
-        </nav>
-    </div>
+                    </div><!--right-nav-->
+                </nav><!--refine-->
+            </div><!--row-->
+            <div class="row">
+              <div id="buttonSlider" class="carousel slide button-slider d-inline-flex justify-content-between w-100" data-ride="carousel" data-interval="5000">
+                <ul class="carousel-indicators ">
+                  <li data-target="#buttonSlider" data-slide-to="0" class="dept1 active"></li>
+                  <li data-target="#buttonSlider" data-slide-to="1" class="dept2"></li>
+                </ul>
+                <div class="carousel-inner flex-fill w-100">
+                  <div class="carousel-item active buttons flex-row flex-fill justify-content-between w-100">
+                    
+                      <a class="btn btn-default border text-secondary  mx-2" href="#">Button 1</a>
+                      <a class="btn btn-default  mx-2" href="#">Button 1</a>
+                      <a class="btn btn-default  mx-2" href="#">Button 1</a>
+                      <a class="btn btn-default  mx-2" href="#">Button 1</a>
+                      <a class="btn btn-default  mx-2" href="#">Button 1</a>
+                    
+                  </div>
+                  <div class="carousel-item buttons flex-row w-100">
+                    
+                      <a class="btn btn-default mx-2" href="#">Button 1</a>
+                      <a class="btn btn-default mx-2" href="#">Button 1</a>
+                      <a class="btn btn-default mx-2" href="#">Button 1</a>
+                      <a class="btn btn-default mx-2" href="#">Button 1</a>
+                      <a class="btn btn-default mx-2" href="#">Button 1</a>
+                    
+                  </div><!--carousel-item-->
+                </div><!--carousel-item-->
+                <a class="carousel-control-prev deptprev" href="#buttonSlider" role="button" data-slide="prev">
+                  <button class="btn btn-light btn-md left" type="button">
+                  <i class="fa fa-chevron-left"></i></button>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next deptnext" href="#buttonSlider" role="button" data-slide="next">
+                  <button class="btn btn-light btn-md right" type="button">
+                    <i class="fa fa-chevron-right"></i>
+                  </button>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div><!--button slider-->
+            </div><!--row-->
+          </div><!--wrapper-->
+    </div><!--filter-menu-->
+    
     
 
 

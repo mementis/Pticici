@@ -56,20 +56,20 @@
   #nav-tabs {
     position: relative;
   }
-  .dropdown:hover>.dropdown-menu {
+  #nav-tabs .dropdown:hover>.dropdown-menu {
     display: block;
   }
   
-  .dropdown>.dropdown-toggle:active {
+  #nav-tabs .dropdown>.dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
       pointer-events: none;
   }
   
-  li.nav-item.dropdown:hover {
+  #nav-tabs li.nav-item.dropdown:hover {
     border-top-style: solid;
     border-top-color: teal;
   }
-  a.dropdown-toggle {
+  #nav-tabs a.dropdown-toggle {
     /*color: rgb(20, 20, 20);*/
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;  
@@ -88,12 +88,12 @@
     color:teal;
   }
   
-  a.dropdown-toggle i {
+  #nav-tabs a.dropdown-toggle i {
     padding-left: 5px;
     padding: 3px;
   }  
   
-  .dropdown-menu a {
+  #nav-tabs .dropdown-menu a {
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
@@ -109,10 +109,55 @@
       background: -moz-linear-gradient();
       background-color: rgb(245, 242, 240);
   }
-   div.container.filter-menu {
+  div.container.filter-menu {
        margin: auto;
        text-align: center;
    }
+  div.container.filter-menu > a.all-filters {
+     color: teal;
+   }
+   
+
+  #filters a.nav-link.all-filters {
+    color: teal;
+  }
+  #filters .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  #filters .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+  
+  #filters li.nav-item.dropdown:hover {
+    background-color: teal;
+    color: #eee;
+    
+  }
+  #filters > a.all-filters {
+    /*color: rgb(20, 20, 20);*/
+    color:teal;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;  
+    word-spacing: 3px;
+    }
+    #filters > a.all-filters:hover {
+      /*color: rgb(20, 20, 20);*/
+      color:rgb(254, 255, 255);
+      background-color: teal;
+      font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;  
+      word-spacing: 3px;
+      }
+  #filters a.dropdown-toggle i {
+    padding-left: 5px;
+    padding: 3px;
+  }  
+    
+  #filters .dropdown-menu a {
+    color:#222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+  }
 
 
   div.container.refiner {
@@ -132,3 +177,55 @@
       font-size: 14px;
       font-family: Arial, Helvetica, sans-serif;
   }
+
+  #buttonSlider .carousel-control-prev {
+    left: -12px;
+    background: none;
+    color: #222;
+    font-size: 2.0em;
+    text-shadow: none;
+    
+  }
+  button.btn.btn-light.btn-md.left {
+    position: absolute;
+    left: 0px;
+    border-radius: 30px;
+    background-color: #fff;
+    border-style: outset;
+    
+  }
+  
+  #buttonSlider .carousel-control-next {
+    right: -12px;
+    float:right;
+    color:#222;
+    font-size: 2.0em;
+  }
+  button.btn.btn-light.btn-md.right {
+    position: absolute;
+    right: 0px;
+    border-radius: 30px;
+    background-color: #fff;
+    border-style: outset; 
+     
+  }
+
+   .carousel.slide .carousel-inner > .carousel-item a {
+    background-color: white;
+    
+    
+    border-color:#222;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: bold;
+  }
+
+  .carousel.slide .carousel-inner > .carousel-item a:hover {
+    border-style: solid;
+    border-color:teal;
+    color: teal;
+  }
+
+  
