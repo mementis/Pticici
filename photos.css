@@ -166,14 +166,17 @@
      
   }
   #refine a.nav-link {
-      color:#222;
+      color:rgb(66, 66, 66);
       font-size: 14px;
       font-weight: bold;
       font-family: Arial, Helvetica, sans-serif;
   }
+  #refine a.nav-link:hover {
+    color: teal;
+  }
 
   #refine span.navbar-text {
-      color:#222;
+      color:rgb(66, 66, 66);
       font-size: 14px;
       font-family: Arial, Helvetica, sans-serif;
   }
@@ -211,15 +214,15 @@
   }
 
    .carousel.slide .carousel-inner > .carousel-item a {
-    background-color: white;
-    
-    
-    border-color:#222;
+    background-color: white;  
+    border-color:#ccc;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     font-weight: bold;
+    font-size: small;
+    color: rgb(148, 148, 148);
   }
 
   .carousel.slide .carousel-inner > .carousel-item a:hover {
